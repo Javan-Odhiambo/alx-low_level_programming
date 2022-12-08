@@ -8,7 +8,7 @@
 int main(void)
 {
 	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	long int size = sizeof(str) / sizeof(str[0]);
+	long int size = sizeof(str) / sizeof(str[0]) - 1;
 
 	fwrite(str, size, 1, stderr);
 	return (1);
