@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 /**
  * _puts - prints a string to stdout.
  * @str: string to be printed.
@@ -12,7 +12,6 @@ void _puts(char *str)
 
 	while (*(str + n) != '\0')
 	{
-		fflush(stdout);
 		write(1, *(str + n), 1);
 	}
 	write(1, '\n', 1);
