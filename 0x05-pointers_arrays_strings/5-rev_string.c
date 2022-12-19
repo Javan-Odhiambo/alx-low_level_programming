@@ -22,4 +22,10 @@ void rev_string(char *s)
 		copy[i] = *(s + n);
 		n--;
 	}
+	
+	while (*(copy + n))
+	{
+		*(s + n) = *(copy + n);
+		n++;
+	}
 }
