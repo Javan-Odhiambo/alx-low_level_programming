@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 /**
  * _puts - prints a string to stdout.
  * @str: string to be printed.
@@ -12,7 +12,7 @@ void _puts(char *str)
 
 	while (*(str + n) != '\0')
 	{
-		fwrite((str + n), 1, 1, stdout);
+		_putchar(*(str + n));
 	}
-	fwrite('\n', 1, 1, stdout);
+	_putchar('\n');
 }
