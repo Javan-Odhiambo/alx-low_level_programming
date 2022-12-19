@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * rev_string - reverses a string.
  * @s: string to be reversed.
@@ -16,7 +17,7 @@ void rev_string(char *s)
 
 	copy = malloc(n * sizeof(char));
 
-	for (i = 0; i < i; i++)
+	for (i = 0; i < n; i++)
 	{
 		copy[i] = *(s + n);
 		n--;
