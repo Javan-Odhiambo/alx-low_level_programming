@@ -13,7 +13,7 @@
 char *_strcat(char *dest, char *src)
 {
 	int ls = 0, ld = 0, i;
-	static char results[500];
+	//static char results[500];
 
 	while (*(dest + ld))
 		ld++;
@@ -21,11 +21,8 @@ char *_strcat(char *dest, char *src)
 	while (*(src + ls))
 		ls++;
 
-	for (i = 0; i < ld; i++)
-		results[i] = *(dest + i);
-
 	for (i = 0; i < ls; i++)
-		results[ld + i] = *(src + i);
+		*(dest + ld + i) = *(src + i);
 
-	return (results);
+	return (dest);
 }
