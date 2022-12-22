@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strcat -  appends the src string to the dest string,
@@ -13,11 +13,11 @@ include "main.h"
 char *_strcat(char *dest, char *src)
 {
 	int ls = 0, ld = 0, i;
-	char results[100];
+	static char results[100];
 
 	while (*(dest + ld))
 		ld++;
-	
+
 	while (*(src + ls))
 		ls++;
 
@@ -26,6 +26,6 @@ char *_strcat(char *dest, char *src)
 
 	for (i = 0; i < ls; i++)
 		results[ld + i] = *(src + i);
-	
+
 	return (results);
 }
