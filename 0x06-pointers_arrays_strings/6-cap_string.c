@@ -14,7 +14,7 @@ char *cap_string(char *hi)
 
 	while (hi[i + 1] != '\0')
 	{
-		if (i == 0)
+		if (i == 0 && (hi[i + 1] >= 'a' && hi[i + 1] <= 'z'))
 			hi[i] -= 32;
 
 		switch (hi[i])
