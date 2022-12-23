@@ -18,6 +18,6 @@ char *string_toupper(char *hi)
 			hi[i] -= 32;
 		i++;
 	}
-	return (hi)
+	return (hi);
 
 }
