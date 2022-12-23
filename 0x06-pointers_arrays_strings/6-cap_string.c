@@ -29,6 +29,7 @@ char *cap_string(char *hi)
 			case '}':
 			case '\n':
 			case '\t':
+			case '\0':
 				if (hi[i + 1] >= 'a' && hi[i + 1] <= 'z')
 				{
 					hi[i + 1] -= 32;
