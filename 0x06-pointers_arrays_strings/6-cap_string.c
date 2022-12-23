@@ -12,7 +12,7 @@ char *cap_string(char *hi)
 {
 	int i = 0;
 
-	while (hi[i] != '\0')
+	while (hi[i + 1] != '\0')
 	{
 		if (hi[i] == ' ' && (hi[i + 1] >= 'a' && hi[i + 1] <= 'z'))
 			hi[i + 1] -= 32;
