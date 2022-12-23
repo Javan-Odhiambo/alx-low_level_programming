@@ -14,8 +14,22 @@ char *cap_string(char *hi)
 
 	while (hi[i + 1] != '\0')
 	{
-		if (hi[i] == ' ' && (hi[i + 1] >= 'a' && hi[i + 1] <= 'z'))
-			hi[i + 1] -= 32;
+		switch (hi[i])
+			case ' ':
+			case ',':
+			case ';':
+			case '.':
+			case '!':
+			case '?':
+			case '"':
+			case '(':
+			case ')':
+			case '{':
+			case '}':
+			case '\n':
+			case '\t':
+				if (hi[i + 1] >= 'a' && hi[i + 1] <= 'z'))
+					hi[i + 1] -= 32;
 		i++;
 	}
 	return (hi);
