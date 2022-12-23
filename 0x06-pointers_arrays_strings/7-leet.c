@@ -10,16 +10,16 @@
 
 char *leet(char *s)
 {
-	int i = 0, j = 0;
-	char ref[] = "aAeEoOtTlL";
-	char rep[] = "4433007711";
+	int i, j;
+	char ref[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	char num[] = {'4','4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
-	for (; s[i]; ++i)
+	for (i = 0; *(s + i); i++)
 	{
-		for (; j < 10; j++)
+		for (j = 0; j < 10; j++)
 		{
-			if (ref[j] == s[i])
-				s[i] = rep[j];
+			if (ref[j] == *(s + i))
+				*(s + i) = num[j];
 		}
 	}
 
