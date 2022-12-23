@@ -11,12 +11,12 @@
 char *leet(char *s)
 {
 	int i = 0, j = 0;
-	char *ref = "aAeEoOtTlL\0";
-	char *rep = "4433007711\0";
+	char *ref = "aAeEoOtTlL";
+	char *rep = "4433007711";
 
-	for (; s[i] != '\0'; i++)
+	for (; s[i] != '\0'; ++i)
 	{
-		for (; ref[j] != '\0'; j++)
+		for (; j < 10; j++)
 		{
 			if (ref[j] == s[i])
 				s[i] = rep[j];
