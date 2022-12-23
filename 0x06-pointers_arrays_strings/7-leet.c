@@ -14,7 +14,7 @@ char *leet(char *s)
 	char ref[] = "aAeEoOtTlL";
 	char rep[] = "4433007711";
 
-	for (; s[i] != '\0'; ++i)
+	for (; s[i]; ++i)
 	{
 		for (; j < 10; j++)
 		{
