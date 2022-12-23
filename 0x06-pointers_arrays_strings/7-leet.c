@@ -11,8 +11,8 @@
 char *leet(char *s)
 {
 	int i = 0, j = 0;
-	char *ref = "aAeEoOtTlL";
-	char *rep = "4433007711";
+	char *ref = "aAeEoOtTlL\0";
+	char *rep = "4433007711\0";
 
 	for (; s[i] != '\0'; i++)
 	{
