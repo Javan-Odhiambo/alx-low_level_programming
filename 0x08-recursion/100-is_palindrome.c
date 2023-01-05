@@ -4,19 +4,18 @@
 /**
  * _palindrome - checks if a string is a palindrome
  * @s: pointer to string to be checked.
- * @left: pointer to the furthest left of the string.
- * @right: pointer to the furthest right of the string.
+ * @start: pointer to the furthest left of the string.
+ * @end: pointer to the furthest right of the string.
  * Return: 1 if palindrome else 0.
  */
 
-int _palindrome(char *s, int left, int right)
+int _palindrome(char *s, int start, int end)
 {
-	if (left < right)
+	if (start < end)
 	{
-		if (s[left] != s[right])
+		if (s[start] != s[end])
 			return (0);
-		return (_palindrome(s, left++, right--));
-
+		return (_palindrome(s, start + 1, end - 1));
 	}
 	return (1);
 }
