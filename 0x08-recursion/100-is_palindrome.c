@@ -13,14 +13,10 @@ int _palindrome(char *s, int left, int right)
 {
 	if (left < right)
 	{
-		if (*(s + left) == *(s + right))
-		{
-			return (_palindrome(s, left++, right--));
-		}
-		else
-		{
+		if (*(s + left) != *(s + right))
 			return (0);
-		}
+		return (_palindrome(s, left++, right--));
+
 	}
 	return (1);
 }
@@ -33,15 +29,9 @@ int _palindrome(char *s, int left, int right)
 
 int is_palindrome(char *s)
 {
-	int end;
-	int start;
 
-	if (strlen(s) == 0)
-		return (1);
+	int end = strlen(s) - 1;
 
-	end = strlen(s) - 1;
-	start = 0;
-
-	return (_palindrome(s, start, end));
+	return (_palindrome(s, 0, end));
 
 }
