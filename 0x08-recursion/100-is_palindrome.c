@@ -34,11 +34,11 @@ int _palindrome(char *s, int left, int right)
 
 int is_palindrome(char *s)
 {
-	if (*s == '\0')
-		return (1);
-
 	int i = 0;
 	int end;
+
+	if (*s == '\0')
+		return (1);
 
 	while (*(s + i) != '\0')
 		i++;
