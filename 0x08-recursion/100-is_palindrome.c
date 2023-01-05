@@ -22,8 +22,10 @@ int _palindrome(char *s, int left, int right)
 			return (0);
 		}
 	}
-	return (1);
-
+	else
+	{
+		return (1);
+	}
 }
 
 /**
