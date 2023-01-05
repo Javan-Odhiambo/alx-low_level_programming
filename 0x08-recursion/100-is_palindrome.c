@@ -8,7 +8,7 @@
  * Return: 1 if palindrome else 0.
  */
 
-_palindrome(char *s, int left, int right)
+int _palindrome(char *s, int left, int right)
 {
 	if (left < right)
 	{
