@@ -1,5 +1,5 @@
 #include "main.h"
-#include <strings.h>
+#include <string.h>
 
 /**
  * _palindrome - checks if a string is a palindrome
@@ -35,7 +35,6 @@ int _palindrome(char *s, int left, int right)
 
 int is_palindrome(char *s)
 {
-	int i = 0;
 	int end;
 
 	if (*s == '\0')
