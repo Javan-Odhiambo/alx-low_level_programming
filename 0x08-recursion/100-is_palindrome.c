@@ -35,12 +35,11 @@ int _palindrome(char *s, int left, int right)
 int is_palindrome(char *s)
 {
 	int end;
-
-	if (*s == '\0')
-		return (1);
+	int start;
 
 	end = strlen(s) - 1;
+	start = 0;
 
-	return (_palindrome(s, 0, end));
+	return (_palindrome(s, start, end));
 
 }
