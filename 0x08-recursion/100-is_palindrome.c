@@ -13,7 +13,7 @@ int _palindrome(char *s, int left, int right)
 {
 	if (left < right)
 	{
-		if (*(s + left) != *(s + right))
+		if (s[left] != s[right])
 			return (0);
 		return (_palindrome(s, left++, right--));
 
