@@ -21,13 +21,17 @@ char *_strdup(char *str)
 
 	cpy = (char *) malloc((sizeof(char) * size));
 
-	if (cpy != NULL)
+	if (cpy != NULL || size == 0)
 	{
 		for (i = 0; i < size; i++)
 		{
 			*(cpy + i) = *(str + i);
 		}
 		*(cpy + size) = '\0';
+	}
+	else
+	{
+		cpy = NULL;
 	}
 	return (cpy);
 }
