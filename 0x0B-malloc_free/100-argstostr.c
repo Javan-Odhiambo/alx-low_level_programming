@@ -15,7 +15,7 @@ char *argstostr(int ac, char **av)
 	int i;
 	int j;
 	int pos;
-	int size = ac;
+	int size = ac + 1;
 	char *str;
 
 	for (i = 0; i < ac; i++)
