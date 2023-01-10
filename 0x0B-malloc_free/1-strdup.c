@@ -29,9 +29,10 @@ char *_strdup(char *str)
 		}
 		*(cpy + size) = '\0';
 	}
-
+	
 	if (size == 0)
+	{
 		cpy = NULL;
-
+	}
 	return (cpy);
 }
