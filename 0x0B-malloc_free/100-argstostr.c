@@ -15,7 +15,7 @@ char *argstostr(int ac, char **av)
 	int i;
 	int j;
 	int pos;
-	int size = 0;
+	int size = ac;
 	char *str;
 
 	for (i = 0; i < ac; i++)
@@ -37,6 +37,8 @@ char *argstostr(int ac, char **av)
 				pos++;
 				j++;
 			}
+			str[pos] = '\n';
+			pos++;
 		}
 	str[size] = '\0';
 	}
