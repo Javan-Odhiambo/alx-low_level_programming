@@ -42,7 +42,7 @@ char *argstostr(int ac, char **av)
 	}
 
 	if (ac == 0 || av == NULL)
-		pos = NULL;
+		str = NULL;
 
-	return (pos);
+	return (str);
 }
