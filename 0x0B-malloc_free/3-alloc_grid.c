@@ -2,11 +2,32 @@
 #include <malloc.h>
 
 /**
- * alloc_grid - dfs
- * @width: 
- * @height:
- * Return: 
+ * alloc_grid -  returns a pointer to a 2 dimensional array of integers.
+ * @width: width of array.
+ * @height: height of array.
+ * Return: pointer to a 2 dimensional array on success else NULL
 */
 
 
-int **alloc_grid(int width, int height);
+int **alloc_grid(int width, int height)
+{
+	int i;
+	int j;
+	int **arr = malloc((width * height) * sizeof(int));
+
+	if (arr != NULL)
+	{
+		for (i = 0; i < height; i++)
+		{
+			for (j = 0; j < width; j++)
+			{
+				arr[i * width + j] = 0;
+			}
+		}
+	}
+
+	if (arr == NULL || width < 1 || height < 1)
+		arr = NULL;
+
+	return (arr);
+}
