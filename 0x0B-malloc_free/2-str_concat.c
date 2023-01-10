@@ -15,14 +15,14 @@ char *str_concat(char *s1, char *s2)
 	unsigned int size;
 	int i;
 	int j;
-	int s1_len;
-	int s2_len;
+	int s1_len = 0;
+	int s2_len = 0;
 
-	while (*(s1 + i) != '\0')
-		s1_len;
+	while (*(s1 + s1_len) != '\0')
+		s1_len++;
 
-	while (*(s1 + j) != '\0')
-		s2_len;
+	while (*(s2 + s2_len) != '\0')
+		s2_len++;
 
 	size = s1_len + s1_len + 1;
 
