@@ -2,7 +2,8 @@
 #include <malloc.h>
 
 /**
- * create_array - that creates an array of chars, and initializes it with a specific char.
+ * create_array - that creates an array of chars,
+ * and initializes it with a specific char.
  * @size: size of the array.
  * @c: character to initialize the array with.
  * Return: pointer to the array, or NULL if it fails
