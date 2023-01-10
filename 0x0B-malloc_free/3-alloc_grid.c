@@ -27,7 +27,15 @@ int **alloc_grid(int width, int height)
 					arr[i][j] = 0;
 				}
 			}
+			else
+			{
+				free(arr + i);
+			}
 		}
+	}
+	else
+	{
+		free(arr);
 	}
 	if (width < 1 || height < 1)
 		arr = NULL;
