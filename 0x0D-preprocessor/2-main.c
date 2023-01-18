@@ -2,11 +2,11 @@
 
 /**
  * main - main function
- * Return: void
+ * Return: 0
 */
 
-void main(void)
+int main(void)
 {
 	printf("%s\n", __FILE__);
-	return;
+	return (0);
 }
