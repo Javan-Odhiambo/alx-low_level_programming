@@ -9,17 +9,18 @@
  * @owner: owner of the dog
  * Return: pointer to the dog struct
 */
-
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog = malloc(sizeof(dog_t));
+	dog_t *dog;
 
-	if (dog == NULL || name == NULL || owner == NULL)
+	if (name == NULL || owner == NULL)
+		return (NULL);
+
+	dog = malloc(sizeof(dog_t));
+	if (dog == NULL)
 		return (NULL);
 
 	dog->owner = malloc(strlen(owner) * sizeof(char));
-
 	if (dog->owner == NULL)
 	{
 		free(dog);
@@ -28,7 +29,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	strcpy(dog->owner, owner);
 
 	dog->name = malloc(strlen(name) * sizeof(char));
-
 	if (dog->name == NULL)
 	{
 		free(dog->owner);
