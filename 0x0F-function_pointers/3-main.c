@@ -4,7 +4,7 @@
  * main - Entry point
  * @argc: argument counter
  * @argv: argument vector
- * return: void
+ * Return: 0 on success else exits
 */
 int main(int argc, char **argv)
 {
