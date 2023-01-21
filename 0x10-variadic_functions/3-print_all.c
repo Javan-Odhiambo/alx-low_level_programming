@@ -93,8 +93,4 @@ void print_all(const char * const format, ...)
 	va_end(args);
 }
 
-int main(void)
-{
-    print_all("cisf", 'a', 123, 4.56, "hello");
-    return (0);
-}
+
