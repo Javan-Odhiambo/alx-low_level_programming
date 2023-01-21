@@ -71,14 +71,13 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (dict[j].ch != NULL)
+		while (dict[j].ch)
 		{
 			if (format[i] == *(dict[j].ch))
 			{
 				printf("%s", separator);
 				dict[j].func(args);
 				separator = ", ";
-				break;
 			}
 			j++;
 		}
