@@ -83,6 +83,7 @@ void print_all(const char * const format, ...)
 				printf("%s", separator);
 				dict[j].func(args);
 				separator = ", ";
+				break;
 			}
 			j++;
 		}
