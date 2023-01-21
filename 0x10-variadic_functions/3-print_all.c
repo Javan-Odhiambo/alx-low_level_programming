@@ -62,7 +62,6 @@ void print_all(const char * const format, ...)
 	va_list args;
 	char *separator = "";
 
-
 	data_dict dict[] = {
 		{"c", print_char},
 		{"i", print_int},
@@ -75,7 +74,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (dict[j].ch)
+		while (dict[j].ch != NULL)
 		{
 			if (format[i] == *(dict[j].ch))
 			{
