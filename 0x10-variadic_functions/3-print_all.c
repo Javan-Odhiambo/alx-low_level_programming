@@ -1,6 +1,4 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
-#include <stdio.h>
 
 /**
  * print_char - function that prints a char given a va_list.
@@ -45,10 +43,7 @@ void print_string(va_list args)
 
 	if (str == NULL)
 		str = "(nill)";
-
 	printf("%s", str);
-
-
 }
 
 /**
