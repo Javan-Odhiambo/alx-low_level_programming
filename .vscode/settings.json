@@ -1,5 +1,6 @@
 {
 	"files.associations": {
-		"variadic_functions.h": "c"
+		"variadic_functions.h": "c",
+		"lists.h": "c"
 	}
 }
