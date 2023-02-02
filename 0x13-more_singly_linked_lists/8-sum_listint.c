@@ -10,10 +10,14 @@ int sum_listint(listint_t *head)
 	listint_t *tmp = NULL;
 	int sum = 0;
 
+	if (head == NULL)
+		return (sum);
+
 	tmp = head;
-	while (tmp->next)
+	while (tmp != NULL)
 	{
 		sum += tmp->n;
+		tmp = tmp->next;
 	}
 
 	return (sum);
