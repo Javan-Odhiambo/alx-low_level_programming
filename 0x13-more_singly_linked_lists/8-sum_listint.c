@@ -8,7 +8,7 @@
 int sum_listint(listint_t *head)
 {
 	listint_t *tmp = NULL;
-	int sum;
+	int sum = 0;
 
 	tmp = head;
 	while (tmp->next)
