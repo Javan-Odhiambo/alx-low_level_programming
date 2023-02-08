@@ -21,7 +21,7 @@ unsigned long int _pow(unsigned int base, unsigned int power)
 /**
 * print_binary - prints a number in binary notation
 * @n: prints a number in binary notation
-* 
+*
 * Return: void
 */
 
