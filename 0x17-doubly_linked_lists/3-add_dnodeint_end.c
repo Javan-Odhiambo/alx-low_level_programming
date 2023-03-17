@@ -30,12 +30,12 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		return (pNode);
 	}
 
-	while(trav->next)
+	while (trav->next)
 		trav = trav->next;
 
 	pNode->next = trav->next;
 	trav->next = pNode;
 	pNode->prev = trav;
 
-	return pNode;
+	return (pNode);
 }
